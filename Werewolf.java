@@ -4,5 +4,9 @@
  */
 
 public class Werewolf extends Monster{
+
+    public void frighten(){
+        System.out.print("Howl!");
+    }
     
 }
