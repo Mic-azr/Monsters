@@ -5,7 +5,7 @@
  */
 
 public abstract class Monster {
-
+    //considering making monsterDescription and a few others static, since the description ought to be dependent on the Monster type and not the individual Monster object
     private String monsterName;
     private String monsterDescription;
     private boolean monsterWasOnceAMan; //Doesn't necessarily mean the monster is humanlike, for example a depraved murderer who dies and becomes an incorporeal wraith with no size or weight
