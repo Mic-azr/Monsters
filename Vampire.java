@@ -3,9 +3,10 @@ public class Vampire extends Monster {
     private String monsterName = "Vampire";
     private String monsterDescription = "An immortal stalker of the night driven by a thirst for fresh human blood.\n" +
                                         "Having consorted with the forces of evil to gain their unnatural powers, vampires have some weaknesses and limitations,\n" +
-                                        "but a vampire may only truly be laid to eternal rest by exposure to direct sunlight or by piercing its dead heart with a blessed stake.";
+                                        "but a vampire may only truly be laid to eternal rest by exposure to direct sunlight or by piercing its dead heart with a blessed stake.\n";
     private boolean monsterWasOnceAMan = true;
     private boolean monsterIsEvil = true;
+    private boolean monsterIsMortal = false; //Vampires have achieved immortality through their evil pacts and deeds, and will not die from natural causes
 
     private String[] vampireThirstScale = {"Ravenous", "Hungry", "Peckish", "Not Hungry", "Satiated"}; //I have no idea what I'm doing
     private String vampireThirstLevel;
