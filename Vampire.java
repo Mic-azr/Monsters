@@ -23,6 +23,10 @@ public class Vampire extends Monster {
         setVampireThirstLevel(1);
     };
 
+    public Vampire(int vampireThirstInput){
+        setVampireThirstLevel(vampireThirstInput);
+    }
+
     public void frighten(){
         System.out.println("Hiss!");
     }
