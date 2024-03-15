@@ -37,8 +37,8 @@ public class Zombie extends Monster{
         System.out.println("Groan...");
     }
 
-    public boolean zombieIsDead(
+    //public boolean zombieIsDead() {
         //checks the Zombie's zombieBodyParts[] for "Head" or "Torso"
         //If either is not in the array, set to true 
-    )
+    //}
 }
