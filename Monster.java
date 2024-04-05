@@ -34,7 +34,7 @@ public abstract class Monster {
     }
 
     private boolean monsterIsEvil; //Some monsters simply don't know better (ex. Zombie), while others choose to cause pain and destruction (ex. Demon)
-    public boolean isMonsterIsEvil() {
+    public boolean isMonsterEvil() {
         return monsterIsEvil;
     }
 
@@ -43,7 +43,7 @@ public abstract class Monster {
     }
 
     private boolean monsterIsMortal; //Indicates whether the Monster may die from natural causes, or be killed by wounds inflicted by mundane weapons
-    public boolean isMonsterIsMortal() {
+    public boolean isMonsterMortal() {
         return monsterIsMortal;
     }
 
