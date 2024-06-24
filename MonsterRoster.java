@@ -60,14 +60,14 @@ public class MonsterRoster {
      * @return true if a Monster is found at the specified index and successfully removed; returns false if index is null
      */
     public boolean removeFromRosterByIndex(int index) {
-        for (int i = 0; i < roster_count; i++) {
-            if(roster[i] != null) {
-                roster[i] = roster[roster_count - 1];
-                roster_count--;
-                return true;
-            }
+        if(roster[index] == null) {
+            roster[index] = roster[roster_count - 1];
+            roster_count--;
+            return true;
         }
-        return false;
+        else {
+            return false;
+        }
     }
 
     public String toString() {
