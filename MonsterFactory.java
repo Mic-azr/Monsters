@@ -3,25 +3,8 @@
  * Because MonsterFactory is an awesome name
  */
 
-public class MonsterFactory {
+public interface MonsterFactory {
 
-    Monster buildMonster(String monsterName) {
-        if (monsterName == "Demon") {
-            return new Demon();
-        }
-        else if (monsterName == "Werewolf") {
-            return new Werewolf();
-        }
-        else if (monsterName == "Vampire") {
-            return new Vampire();
-        }
-        else if (monsterName == "Zombie") {
-            return new Zombie();
-        }
-        else {
-            return null;
-        }
-
-    }
+    Monster buildMonster();
 
 }

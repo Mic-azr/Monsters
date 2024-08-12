@@ -2,7 +2,7 @@
  * Class design practice
  * 
  */
-
+import java.time.LocalTime;
 public class Werewolf extends Monster{
 
     private String monsterName = "Werewolf";
@@ -23,12 +23,25 @@ public class Werewolf extends Monster{
     }
 
     public Werewolf(){
-        //Should I check the system time and set werewolfTransformed to true or false depending on if it's nighttime? That would be funny
-        setWerewolfTransformed(false); //just to be safe for now
+        if(LocalTime.now().isAfter(LocalTime.parse("MIDNIGHT")) && LocalTime.now().isBefore(LocalTime.parse("06:00"))){
+            setWerewolfTransformed(true);
+        }
+        else {
+            setWerewolfTransformed(false);
+        } 
     };
 
+    public Werewolf(boolean transformed) {
+        setWerewolfTransformed(transformed);
+    }
+
     public void frighten(){
-        System.out.println("Howl!");
+        if(isWerewolfTransformed()) { 
+           System.out.println("Howl!");
+        }
+        else {
+            System.out.println("Stay away!");
+        }
     }
 
     public void werewolfTransform(){
