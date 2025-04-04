@@ -28,7 +28,8 @@ public class Demon extends Monster {
 
     }
 
+    @Override
     public void frighten(){
-        System.out.println("PANDEMONIUM REIGNAT"); //Check out "FAITH: The Unholy Trinity" if you like horror video games!
+        System.out.println("The Demon's gaze strikes terror into your soul!"); 
     }
 }

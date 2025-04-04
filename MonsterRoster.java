@@ -2,7 +2,7 @@ import java.util.Arrays;
 /*
  * Intended to be a List of Monsters that a user can browse through and view each individual Monster
  * @author Michael Cummings
- * @version 1.0
+ * @version 0.1
  */
 
 public class MonsterRoster {
@@ -70,6 +70,7 @@ public class MonsterRoster {
         }
     }
 
+    @Override
     public String toString() {
         String s = "";
         for(int i = 0; i < roster_count; i++) {

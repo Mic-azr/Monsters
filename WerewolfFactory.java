@@ -3,6 +3,7 @@ public class WerewolfFactory implements MonsterFactory{
     Scanner scanner = new Scanner(System.in);
     boolean transform_choice;
     
+    @Override
     public Monster buildMonster() {
         System.out.println("Manually set werewolf transformation? Transformation will be decided by system time by default. Type 'y' or 'n'.");
         switch(scanner.nextLine().charAt(0)) {

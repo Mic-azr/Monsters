@@ -1,8 +1,10 @@
 public class Zombie extends Monster{
     private String monsterName = "Zombie";
-    private String monsterDescription = "A human corpse reanimated by supernatural or scientific means.\n" + 
-                                        "Zombies possess no higher reason or inner monologue, driven solely by an instinctual hunger for living flesh.\n" +
-                                        "Zombies will rot over time and can be maimed or dismembered, but a Zombie can only truly be destroyed by burning it or by completely destroying its brain.\n"; 
+    private String monsterDescription = """
+                                        A human corpse reanimated by supernatural or scientific means.
+                                        Zombies possess no higher reason or inner monologue, driven solely by an instinctual hunger for living flesh.
+                                        Zombies will rot over time and can be maimed or dismembered, but a Zombie can only truly be destroyed by burning it or by completely destroying its brain.
+                                        """; 
     private boolean monsterWasOnceAMan = true;
     private boolean monsterIsEvil = false; //Zombies are husks with no internal experience or motivation.
     private boolean monsterIsMortal = false; //Zombies are considered to be "undead". Though I suppose the only difference between "undead" and "immortal" is one's quality of "unlife"...
@@ -33,6 +35,7 @@ public class Zombie extends Monster{
 
     }
 
+    @Override
     public void frighten(){
         System.out.println("Groan...");
     }
